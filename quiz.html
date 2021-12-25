@@ -10,7 +10,7 @@
 
     <style>
         body {
-            margin-left: 30px;
+            margin-left: 100px;
             
         }
 
@@ -18,23 +18,16 @@
             margin-left: 5px;
         }
 
-        .bn31 {
-            background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
-            border-radius: 40px;
-            box-sizing: border-box;
-            color: #00a84f;
-            display: block;
-            height: 50px;
-            font-size: 1.4em;
-            padding: 4px;
-            position: relative;
-            text-decoration: none;
-            width: 7em;
-            z-index: 2;
+        img {
+            float: right;
+            margin-right: 500px;
+        }
+
+        footer {
+            margin: 100px;
         }
 
         
-
         
     </style>
 </head>
@@ -45,9 +38,12 @@
     <button id="test">Restart</button>
     <hr>
 
-    <h2>Type the correct Simple Past Tense.</h2>
+    
+
+    <img src="tube.gif">
     
     <form onsubmit="return false">
+        <h2>Type the correct Simple Past Tense.</h2>
         <h3>1. put - <input type="text" id="q1"></h3>
         <input type="hidden" id="a1">
 
@@ -126,11 +122,11 @@
 
         <input type="submit" id="submit" value="Submit" onclick="this.style.visibility = 'hidden'">
         <button id="clear">Clear</button>
+        <hr>
         
     </form>
     
-    
-
+    <footer id="footer"></footer>
     <script src="answer.js"></script>
 </body>
 </html>
